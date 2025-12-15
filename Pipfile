@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["standard"], version = "*"}
+email-validator = "*"
+diator = "*"
+scalar-fastapi = "*"
+sqlalchemy = "*"
+bcrypt = "*"
+pyjwt = "*"
+pydantic-settings = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.14"

@@ -40,7 +40,8 @@ JWT_SECRET_KEY=your_secret_key_here
 
 # API key (if required)
 
-API_KEY=your_api_key_here 5. Run the FastAPI server
+API_KEY=your_api_key_here 5.
+Run the FastAPI server
 
 ```bash
 fastapi dev app.py

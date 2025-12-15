@@ -1,8 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
+
+from .config import database_settings
 from ..users.user import User
 from .base import Base
-engine = create_engine("sqlite:///./sqlite.db",
+
+engine = create_engine(database_settings.database_url,
                        connect_args={"check_same_thread": False}, echo=True, future=True)
 session_local = sessionmaker(
     autocommit=False, autoflush=False, bind=engine, class_=Session)

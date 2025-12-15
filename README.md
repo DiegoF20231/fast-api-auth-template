@@ -26,7 +26,21 @@ The project follows a clean and modular architecture using **Pydantic** for vali
 1. Clone the repository
 2. Create a virtual environment
 3. Install dependencies
-4. Run the FastAPI server
+4. Create a file named .env in the root of the project with the following structure:
+
+# .env file example
+
+# Database configuration
+
+DATABASE_URL=sqlite:///./sqlite.db
+
+# JWT_SETTINGS
+
+JWT_SECRET_KEY=your_secret_key_here
+
+# API key (if required)
+
+API_KEY=your_api_key_here 5. Run the FastAPI server
 
 ```bash
 fastapi dev app.py

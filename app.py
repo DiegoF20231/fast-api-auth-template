@@ -16,11 +16,6 @@ app.include_router(auth_router)
 register_validation_exception_handler(app)
 
 
-@app.get("/")
-def index():
-    return {"message": "Welcome to the Book Store API!", "error": UserErrors.USER_NOT_FOUND}
-
-
 @app.get("/scalar", include_in_schema=False)
 def scalar():
     return get_scalar_api_reference(
